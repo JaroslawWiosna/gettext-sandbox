@@ -7,7 +7,7 @@ EXEC = main
 all: $(EXEC) $(EXEC).mo
 
 $(EXEC): $(EXEC).c 
-	gcc main.c -o main
+	gcc main.c -g -o main
 
 $(EXEC).mo: $(EXEC).po
 	msgfmt --output-file=$@ $<
